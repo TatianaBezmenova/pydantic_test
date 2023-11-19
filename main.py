@@ -25,7 +25,7 @@ class Person(BaseModel):
 
 
 def process(data: json):
-    """Парсит входные данные их JSONа в объект и проверяет их с помощью Pydantic"""
+    """Парсит входные данные из JSONа в объект и проверяет их с помощью Pydantic"""
     print('-------')
     try:
         # Получим объект
@@ -61,7 +61,7 @@ process(data_2)
 
 data_3 = """{
     "name": "Вася",
-    "age": -4,
-    "animals": 'нет'
+    "age": 25,
+    "animals": "нет"
 }"""
 process(data_3)
